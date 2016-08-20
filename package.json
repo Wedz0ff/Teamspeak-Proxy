@@ -1,0 +1,25 @@
+{
+  "name": "teamspeak-proxy",
+  "version": "1.0.0",
+  "description": "TS3 Proxy",
+  "main": "entry.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://VentyCZ@bitbucket.org/VentyCZ/teamspeak-proxy.git"
+  },
+  "keywords": [
+    "ts",
+    "teamspeak",
+    "ts3",
+    "proxy"
+  ],
+  "author": "VentyCZ",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/VentyCZ/teamspeak-proxy#readme",
+  "dependencies": {
+    "udp-proxy": "^1.0.1"
+  }
+}
