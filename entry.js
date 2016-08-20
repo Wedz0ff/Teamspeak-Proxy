@@ -29,15 +29,15 @@ voiceProxy.on('bound', function (details) {
 });
 
 voiceProxy.on('proxyClose', function (peer) {
-	console.log('Disconnecting socket from %s!', peer.address);
+	//console.log('Disconnecting socket from %s!', peer.address);
 });
 
 voiceProxy.on('proxyError', function (err) {
-	console.log('ProxyError: %s', err);
+	console.log('[VOICE] ProxyERR: %s', err);
 });
 
 voiceProxy.on('error', function (err) {
-	console.log('GeneralError: %s', err);
+	console.log('[VOICE] ERR: %s', err);
 });
 
 //File transfer proxy startup
@@ -55,8 +55,8 @@ fileTransferProxy.on('bound', (details) => {
 	console.log('[FILE] %s:%d --> %s:%d', details.route.address, details.route.port, details.peer.address, details.peer.port);
 });
 
-fileTransferProxy.on('end', (details) => {
-	console.log(details);
+fileTransferProxy.on('error', (err) => {
+	console.log('[FILE] ERR: %s', err);
 });
 
 //Query proxy startup
@@ -74,8 +74,8 @@ queryProxy.on('bound', (details) => {
 	console.log('[QUERY] %s:%d --> %s:%d', details.route.address, details.route.port, details.peer.address, details.peer.port);
 });
 
-queryProxy.on('end', (details) => {
-	console.log(details);
+queryProxy.on('error', (err) => {
+	console.log('[QUERY] ERR: %s', err);
 });
 
 //Commander startup

@@ -32,6 +32,12 @@ function TcpProxy(options) {
             //Closes the proxy connection
             targetSoc.end();
         });
+        proxySoc.on('error', (err) => {
+            self.emit('error', err);
+        });
+        targetSoc.on('error', (err) => {
+            self.emit('error', err);
+        });
         targetSoc.connect(parseInt(port), host, () => {
             self.emit('bound', {
                 route: proxySoc.address(),
