@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://VentyCZ@bitbucket.org/VentyCZ/teamspeak-proxy.git"
+    "url": "git+https://github.com/VentyCZ/Teamspeak-Proxy.git"
   },
   "keywords": [
     "ts",
@@ -18,7 +18,7 @@
   ],
   "author": "VentyCZ",
   "license": "MIT",
-  "homepage": "https://bitbucket.org/VentyCZ/teamspeak-proxy#readme",
+  "homepage": "https://github.com/VentyCZ/Teamspeak-Proxy",
   "dependencies": {
     "udp-proxy": "^1.0.1"
   }
