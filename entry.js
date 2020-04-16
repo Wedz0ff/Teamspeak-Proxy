@@ -3,7 +3,7 @@ const LOCAL_PORT = 9987;
 const LOCAL_PORT_FILE = 30033;
 const LOCAL_PORT_QUERY = 10011;
 
-const REMOTE_HOST = 'ts.spawnpoint.cz';
+const REMOTE_HOST = 'rangers.wed.tf';
 const REMOTE_PORT = 9987;
 const REMOTE_PORT_FILE = 30033;
 const REMOTE_PORT_QUERY = 10011;
